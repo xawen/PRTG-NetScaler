@@ -1,9 +1,9 @@
 Scripts:
-	- NetScaler-AppliancePerformance.ps1 - Monitor general NetScaler perfomance stats.
-	- NetScaler-AllvServer-State.ps1 - Monitor state and health of all instances of all vServer types.
-	- NetScaler-LBvServer-State.ps1 - Monitor state and health of all instances of Load Balancer vServers.
-	- NetScaler-CertExpiration.ps1 - Monitor days until expiration for all SSL server certificates.
-	- NetScaler-ConfigSavedState.ps1 - Monitor for unsaved configuration changes.
+- NetScaler-AppliancePerformance.ps1 - Monitor general NetScaler perfomance stats.
+- NetScaler-AllvServer-State.ps1 - Monitor state and health of all instances of all vServer types.
+- NetScaler-LBvServer-State.ps1 - Monitor state and health of all instances of Load Balancer vServers.
+- NetScaler-CertExpiration.ps1 - Monitor days until expiration for all SSL server certificates.
+- NetScaler-ConfigSavedState.ps1 - Monitor for unsaved configuration changes.
 
 Steps to configure:
 
