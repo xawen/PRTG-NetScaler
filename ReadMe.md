@@ -4,12 +4,10 @@ A collection of PRTG scripts to monitor key metrics and status of NetScaler heal
 
 ## Included Scripts
 - NetScaler-AppliancePerformance.ps1 - Monitor general NetScaler perfomance stats.
-![alt text](Screenshots/Performance.png "Performance Sensor")
 - NetScaler-AllvServer-State.ps1 - Monitor state and health of all instances of all vServer types.
 - NetScaler-LBvServer-State.ps1 - Monitor state and health of all instances of Load Balancer vServers.
 - NetScaler-CertExpiration.ps1 - Monitor days until expiration for all SSL server certificates.
 - NetScaler-ConfigSavedState.ps1 - Monitor for unsaved configuration changes.
-![alt text](Screenshots/ConfigState.png "Configuration Sensor")
 
 ## Configuration
 1) On the PRTG Server open a Powershell (x86) prompt as admin and run: Install-Module -Name NetScaler -scope AllUsers
@@ -29,3 +27,7 @@ A collection of PRTG scripts to monitor key metrics and status of NetScaler heal
 	EXE/Script - Choose the desired script
 	Parameters - Enter: %host %linuxuser %linuxpassword
 9) Select continue
+
+## Screenshots
+![alt text](Screenshots/Performance.png "Performance Sensor")
+![alt text](Screenshots/ConfigState.png "Configuration Sensor")
