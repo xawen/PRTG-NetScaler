@@ -17,9 +17,9 @@ A collection of PRTG scripts to monitor key metrics and status of NetScaler heal
 	- Directory may vary with PRTG install path
 4) Copy all .ovl files to C:\Program Files (x86)\PRTG Network Monitor\lookups\custom
 	- Directory may vary with PRTG install path
-5) In PRTG go to Setup > Administrative tools
-	Reload lookups
-	Restart core server (optional, run if PRTG has issues finding the script)
+5) In PRTG go to Setup > Administrative tools:
+	- Reload lookups
+	- Restart core server (optional, run if PRTG has issues finding the script)
 6) Edit your NetScaler device in PRTG and set the Linux credentials to the new read only account
 7) Add a new EXE/Script Advanced type sensor to your NetScaler device
 8) Set the following options on the sensor
