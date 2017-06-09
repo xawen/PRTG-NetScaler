@@ -10,7 +10,9 @@ A collection of PRTG scripts to monitor key metrics and status of NetScaler heal
 - NetScaler-ConfigSavedState.ps1 - Monitor for unsaved configuration changes.
 
 ## Configuration
-1) On the PRTG Server open a Powershell (x86) prompt as admin and run: Install-Module -Name NetScaler -scope AllUsers
+1) On the PRTG Server open a Powershell (x86) prompt as admin and run: 
+	- Install-Module -Name NetScaler -scope AllUsers
+	- Set-ExecutionPolicy Unrestricted
 	- Note:  This MUST be done in the (x86) version of powershell
 2) Create a user on the NetScaler with the read-only Command Policy
 3) Copy all .ps1 files to C:\Program Files (x86)\PRTG Network Monitor\Custom Sensors\EXEXML
