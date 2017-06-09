@@ -20,13 +20,14 @@ A collection of PRTG scripts to monitor key metrics and status of NetScaler heal
 5) In PRTG go to Setup > Administrative tools:
 	- Reload lookups
 	- Restart core server (optional, run if PRTG has issues finding the script)
-6) Edit your NetScaler device in PRTG and set the Linux credentials to the new read only account
-7) Add a new EXE/Script Advanced type sensor to your NetScaler device
-8) Set the following options on the sensor
+6) Add a NetScaler device in PRTG.  Set the hostname or IP to the NSIP address.
+7) Edit your NetScaler device in PRTG and set the Linux credentials to the new read only account
+8) Add a new EXE/Script Advanced type sensor to your NetScaler device
+9) Set the following options on the sensor
 	- Name - Set a descriptive name
 	- EXE/Script - Choose the desired script
 	- Parameters - Enter: %host %linuxuser %linuxpassword
-9) Select continue
+10) Select continue
 
 ## Screenshots
 ![alt text](Screenshots/Performance.png "Performance Sensor")
