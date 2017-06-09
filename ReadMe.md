@@ -5,6 +5,7 @@ Scripts:
 - NetScaler-LBvServer-State.ps1 - Monitor state and health of all instances of Load Balancer vServers.
 - NetScaler-CertExpiration.ps1 - Monitor days until expiration for all SSL server certificates.
 - NetScaler-ConfigSavedState.ps1 - Monitor for unsaved configuration changes.
+![alt text](Screenshots/ConfigState.png "Configuration Sensor")
 
 Steps to configure:
 
