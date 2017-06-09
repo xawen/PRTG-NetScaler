@@ -23,9 +23,9 @@ A collection of PRTG scripts to monitor key metrics and status of NetScaler heal
 6) Edit your NetScaler device in PRTG and set the Linux credentials to the new read only account
 7) Add a new EXE/Script Advanced type sensor to your NetScaler device
 8) Set the following options on the sensor
-	Name - Set a descriptive name
-	EXE/Script - Choose the desired script
-	Parameters - Enter: %host %linuxuser %linuxpassword
+	- Name - Set a descriptive name
+	- EXE/Script - Choose the desired script
+	- Parameters - Enter: %host %linuxuser %linuxpassword
 9) Select continue
 
 ## Screenshots
