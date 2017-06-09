@@ -1,4 +1,8 @@
-Scripts:
+# PRTG-NetScaler
+
+A collection of PRTG scripts to monitor key metrics and status of NetScaler health.
+
+##Included Scripts
 - NetScaler-AppliancePerformance.ps1 - Monitor general NetScaler perfomance stats.
 ![alt text](Screenshots/Performance.png "Performance Sensor")
 - NetScaler-AllvServer-State.ps1 - Monitor state and health of all instances of all vServer types.
@@ -7,8 +11,7 @@ Scripts:
 - NetScaler-ConfigSavedState.ps1 - Monitor for unsaved configuration changes.
 ![alt text](Screenshots/ConfigState.png "Configuration Sensor")
 
-Steps to configure:
-
+##Configuration
 1) On the PRTG Server open a Powershell (x86) prompt as admin and run: Install-Module -Name NetScaler -scope AllUsers
 	- Note:  This MUST be done in the (x86) version of powershell
 2) Create a user on the NetScaler with the read-only Command Policy
