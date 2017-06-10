@@ -17,10 +17,10 @@ switch ($ConfigResults.nsconfig.configchanged)
 			"True" {$ConfigChanged = 1}
     		}
 $LastConfigChangedTime = $expDate = [datetime]::ParseExact($ConfigResults.nsconfig.lastconfigchangedtime, "ddd MMM  d HH:mm:ss yyyy", $null)
-$LastConfigSaveTime = $expDate = [datetime]::ParseExact($ConfigResults.nsconfig.lastconfigsavetime, "ddd MMM  d HH:mm:ss yyyy", $null)
-$MinutesOfUnsavedChanges = [math]::truncate(($LastConfigChangedTime - $LastConfigSaveTime).TotalMinutes)
+$Now = Get-Date
 
-If ($MinutesOfUnsavedChanges -lt 0) {$MinutesOfUnsavedChanges = 0}
+If ($ConfigChanged -eq 0) {$MinutesOfUnsavedChanges = 0}
+Else {$MinutesOfUnsavedChanges = [math]::truncate(($Now - $LastConfigChangedTime).TotalMinutes)}
 
 Write-Host "<prtg>"
 
