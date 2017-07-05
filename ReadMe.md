@@ -2,6 +2,8 @@
 
 A collection of PRTG scripts to monitor key metrics and status of NetScaler health.
 
+This sensor library relies on the [NetScaler PowerShell module](https://www.powershellgallery.com/packages/NetScaler) written by Brandon Olin.
+
 ## Included Scripts
 - NetScaler-AppliancePerformance.ps1 - Monitor general NetScaler perfomance stats.
 	- CPU utlization
