@@ -4,10 +4,26 @@ A collection of PRTG scripts to monitor key metrics and status of NetScaler heal
 
 ## Included Scripts
 - NetScaler-AppliancePerformance.ps1 - Monitor general NetScaler perfomance stats.
+	- CPU utlization
+	- Packet engine CPU utilization
+	- Management engine CPU utilization
+	- Disk usage
+	- Memory usage
+	- Network throughput (RX/TX)
+	- SSL transactions per second
 - NetScaler-AllvServer-State.ps1 - Monitor state and health of all instances of all vServer types.
+	- Health % for each vServer
+	- State (Up, down, maint) for each vServer
+	- Note: includes Load Balancing, AAA, VPN (Gateway) and Content Switch vServers
 - NetScaler-LBvServer-State.ps1 - Monitor state and health of all instances of Load Balancer vServers.
+	- Health % for each vServer
+	- State (Up, down, maint) for each vServer
 - NetScaler-CertExpiration.ps1 - Monitor days until expiration for all SSL server certificates.
+	- Days until next certificate expiration date
+	- Days until expiration for each server type certificate
 - NetScaler-ConfigSavedState.ps1 - Monitor for unsaved configuration changes.
+	- Unsaved configuration change status
+	- Time since changes were saved
 
 ## Configuration
 1) On the PRTG Server open a Powershell (x86) prompt as admin and run: 
