@@ -16,7 +16,8 @@ switch ($ConfigResults.nsconfig.configchanged)
         		"False" {$ConfigChanged = 0} 
 			"True" {$ConfigChanged = 1}
     		}
-$LastConfigChangedTime = $expDate = [datetime]::ParseExact($ConfigResults.nsconfig.lastconfigchangedtime, "ddd MMM  d HH:mm:ss yyyy", $null)
+$LastConfigChangedTime = $ConfigResults.nsconfig.lastconfigchangedtime.Replace("  "," ")
+$LastConfigChangedTime = [datetime]::ParseExact($LastConfigChangedTime, "ddd MMM d HH:mm:ss yyyy", $null)
 $Now = Get-Date
 
 If ($ConfigChanged -eq 0) {$MinutesOfUnsavedChanges = 0}
