@@ -49,6 +49,9 @@ This sensor library relies on the [NetScaler PowerShell module](https://www.powe
 	- Parameters - Enter: %host %linuxuser %linuxpassword
 10) Select continue
 
+## Notes
+- If you have IP Reputation enabled, the NetScaler will also update the reputation database ever 5 minutes (default).  When this happens, the "Last Config Changed Time" time will be updated.  This will cause the "Time since changes were saved" counter in NetScaler-ConfigSavedState.ps1 to be inaccurate.
+
 ## Screenshots
 ![alt text](Screenshots/Performance.png "Performance Sensor")
 ![alt text](Screenshots/ConfigState.png "Configuration Sensor")
