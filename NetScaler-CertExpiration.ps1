@@ -9,7 +9,7 @@ $Credential = New-Object System.Management.Automation.PSCredential ($Username, $
 
 $Session =  Connect-Netscaler -Hostname $Nsip -Credential $Credential -PassThru
 
-$CertResults = Get-NSSSLCertificate -session $Session | Where-Object {$_.certificatetype -eq "CLNT_CERT, SRVR_CERT"} 
+$CertResults = Get-NSSSLCertificate -session $Session | Where-Object {$_.certificatetype -contains "SRVR_CERT"} 
 
 $FirstExpiration = 2000
 foreach ($Result in $CertResults) {
