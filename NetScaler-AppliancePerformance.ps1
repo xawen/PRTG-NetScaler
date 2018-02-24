@@ -19,25 +19,25 @@ Write-Host "<prtg>"
 
 Write-Host "<result>"
 Write-Host ("<channel>CPU Usage</channel>")
-Write-Host ("<value>" + $ResultSystem.cpuusage + "</value>")
+Write-Host ("<value>" + [math]::Round($ResultSystem.cpuusagepcnt) + "</value>")
 Write-Host "<unit>Percent</unit>"
 Write-Host "</result>"
 
 Write-Host "<result>"
 Write-Host ("<channel>Packet CPU Usage</channel>")
-Write-Host ("<value>" + $ResultSystem.pktcpuusagepcnt + "</value>")
+Write-Host ("<value>" + [math]::Round($ResultSystem.pktcpuusagepcnt) + "</value>")
 Write-Host "<unit>Percent</unit>"
 Write-Host "</result>"
 
 Write-Host "<result>"
 Write-Host ("<channel>Management CPU Usage</channel>")
-Write-Host ("<value>" + $ResultSystem.mgmtcpuusagepcnt + "</value>")
+Write-Host ("<value>" + [math]::Round($ResultSystem.mgmtcpuusagepcnt) + "</value>")
 Write-Host "<unit>Percent</unit>"
 Write-Host "</result>"
 
 Write-Host "<result>"
 Write-Host ("<channel>Memory Usage</channel>")
-Write-Host ("<value>" + $ResultSystem.memusagepcnt + "</value>")
+Write-Host ("<value>" + [math]::Round($ResultSystem.memusagepcnt) + "</value>")
 Write-Host "<unit>Percent</unit>"
 Write-Host "</result>"
 
