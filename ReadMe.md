@@ -23,7 +23,6 @@ This sensor library relies on the [NetScaler PowerShell module](https://www.powe
 - NetScaler-CertExpiration.ps1 - Monitor days until expiration for all SSL server certificates.
 	- Days until next certificate expiration date
 	- Days until expiration for each server type certificate
-	- Note: Citrix changed the cert type parameter in a recent release of NetScaler 12 code.  If you are using an older version (prior to build 56.20), use the NetScaler-CertExpiration-OldFormat.ps1 script.
 - NetScaler-ConfigSavedState.ps1 - Monitor for unsaved configuration changes.
 	- Unsaved configuration change status
 	- Time since changes were saved
